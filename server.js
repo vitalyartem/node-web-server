@@ -60,6 +60,12 @@ app.get('/about', (rew, res) => {
   });
 } );
 
+app.get('/projects', (rew, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
 app.get('/bad', (rew, res) => {
   res.send({
     errorMessage: 'Unable to handle this request'
